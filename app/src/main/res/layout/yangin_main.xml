@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c2c2c2" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#540000"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Yangın Bilgilendirme"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/yanginTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#540000"
+        app:tabIndicatorColor="#FFBD191F"
+        app:tabIndicatorGravity="stretch"
+        app:tabSelectedTextColor="#FFFFFF"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="#C2C2C2"></com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/yanginPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>

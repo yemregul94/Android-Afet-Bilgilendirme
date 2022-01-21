@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.afetBilgilendirme">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.afetBilgilendirme.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.afetBilgilendirme.main.DepremActivity">
+
+    </activity>
+
+        <activity android:name="com.example.afetBilgilendirme.main.YanginActivity">
+
+    </activity>
+
+        <activity android:name="com.example.afetBilgilendirme.depremTest.DepremTestActivity">
+
+        </activity>
+
+        <activity android:name="com.example.afetBilgilendirme.yanginTest.YanginTestActivity">
+
+        </activity>
+
+    </application>
+
+</manifest>

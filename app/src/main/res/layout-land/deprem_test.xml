@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c2c2c2"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#540000"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Deprem Test"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:layout_above="@+id/onaylaButton"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="-1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/SoruText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="Soru\nSoru\nSoru"
+                android:textColor="#000000"
+                android:textSize="32sp" />
+
+            <RadioGroup
+                android:id="@+id/cevapRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:id="@+id/cevap1radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cevap 1"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/cevap2radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cevap 2"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/cevap3radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cevap 3"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/cevap4radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cevap 4"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/onaylaButton"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="#540000"
+        android:text="Onayla"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>
+

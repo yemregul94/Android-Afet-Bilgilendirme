@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context="com.example.afetBilgilendirme.main.MainActivity">
+
+    <Button
+        android:id="@+id/depremButton"
+        android:layout_width="291dp"
+        android:layout_height="53dp"
+        android:background="#540000"
+        android:text="Deprem"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294" />
+
+    <Button
+        android:id="@+id/depremTestButton"
+        android:layout_width="291dp"
+        android:layout_height="53dp"
+        android:background="#540000"
+        android:text="Deprem Test"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yanginButton"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <Button
+        android:id="@+id/yanginTestButton"
+        android:layout_width="291dp"
+        android:layout_height="53dp"
+        android:background="#540000"
+        android:text="Yangın Test"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/depremTestButton"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <Button
+        android:id="@+id/yanginButton"
+        android:layout_width="291dp"
+        android:layout_height="53dp"
+        android:background="#540000"
+        android:text="Yangın"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/depremButton"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Afet Bilgilendirme Uygulaması"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/depremButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
